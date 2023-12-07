@@ -1,0 +1,15 @@
+.host-mini {
+    border-block: 1px solid $clr2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 5.625rem;
+    padding-block: 1.5rem;
+
+    img {
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

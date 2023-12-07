@@ -1,0 +1,20 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) minmax(0, 147.5rem) minmax(5rem, 1fr);
+}
+
+.narrow-layout {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) minmax(0, 70rem) minmax(5rem, 1fr);
+}
+
+header,
+footer {
+    border-block: 1px solid $clr2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+    background-color: $clr1;
+}

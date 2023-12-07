@@ -1,0 +1,16 @@
+//basics
+@import './basics/_variables.scss';
+@import './basics/_typography.scss';
+@import './basics/_layout.scss';
+@import './basics/_base.scss';
+
+//cmps
+@import './cmps/MainHeader.scss';
+@import './cmps/SpaceIndex.scss';
+@import './cmps/SpaceList.scss';
+@import './cmps/SpacePreview.scss';
+@import './cmps/SpaceDetails.scss';
+@import './cmps/SearchBar.scss';
+@import './cmps/Logo.scss';
+@import './cmps/Footer.scss';
+@import './cmps/HostMini.scss';

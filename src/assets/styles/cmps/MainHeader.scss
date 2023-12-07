@@ -1,0 +1,10 @@
+.main-header-container {
+    height: 5rem;
+
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-column: 2;
+    }
+}

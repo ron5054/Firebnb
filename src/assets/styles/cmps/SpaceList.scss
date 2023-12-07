@@ -1,0 +1,8 @@
+.space-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 2.5rem;
+    padding: 0;
+    margin: 7rem 0 7rem 0;
+}
