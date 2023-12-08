@@ -63,5 +63,12 @@
             transition: opacity .3s ease;
             cursor: pointer;
         }
+
+        .heart-btn {
+            position: absolute;
+            top: .8rem;
+            right: .8rem;
+            cursor: pointer;
+        }
     }
 }

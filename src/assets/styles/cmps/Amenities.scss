@@ -1,0 +1,21 @@
+.amenities {
+    padding-block: 3rem;
+    border-block: 1px solid $clr2;
+
+    h1 {
+        padding-block-end: 1.5rem;
+        font-size: 1.375rem;
+    }
+
+    .amenities-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 2.5rem);
+
+
+        li {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}

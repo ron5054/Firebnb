@@ -6,12 +6,16 @@
         grid-column: 2;
         gap: 1rem;
 
+        .space-name {
+            padding-block: 1.5rem;
+            font-size: 1.625rem;
+        }
+
         .images-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: .5rem;
-            // height: 35rem;
 
             img {
                 width: 100%;
@@ -34,6 +38,38 @@
             .img-2 {
                 border-top-right-radius: 1rem;
             }
+        }
+
+        .wrapper {
+            max-width: 40.82rem;
+
+            .space-info {
+                padding-block: 2rem;
+
+                h1 {
+                    font-size: 1.375rem;
+                }
+
+                ul {
+                    display: flex;
+                    gap: .3rem;
+                }
+            }
+
+            .best-space {
+                display: flex;
+                align-items: flex-end;
+                height: 7.5rem;
+
+                img {
+                    height: 100%;
+                }
+
+                span {
+                    font-size: 6.25rem;
+                }
+            }
+
         }
     }
 }

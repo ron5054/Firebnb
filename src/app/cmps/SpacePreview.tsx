@@ -3,9 +3,13 @@ import { useState } from 'react'
 import { Space } from '../types'
 import { BsFillStarFill } from "react-icons/bs"
 import { utilsService } from '../services/utils.service'
+import useIcons from '../services/svg.service';
 
 export default function SpacePreview({ space }: { space: Space }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
+    console.log(space);
+    const { getIcon } = useIcons()
+
     const distance = () => {
         const lat1 = 31.9618
         const lon1 = 34.8124
@@ -34,6 +38,7 @@ export default function SpacePreview({ space }: { space: Space }) {
                 <section className="images-wrapper">
                     <button className='btn back-btn' onClick={handlePrevImage}>🡠</button>
                     <button className='btn next-btn' onClick={handleNextImage}>🡢</button>
+                    <button className="btn heart-btn">{getIcon('heart')}</button>
                     <img src={space.imgUrls[currentImageIndex]} alt="" />
                 </section>
                 <section className="space-header">
