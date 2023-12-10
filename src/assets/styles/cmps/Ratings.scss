@@ -1,0 +1,38 @@
+.ratings {
+    padding-block: 2.5rem;
+    border-block-end: 1px solid $clr2;
+    margin-block-end: 2.5rem;
+    width: 100%;
+
+    .ratings-header {
+        display: flex;
+        align-items: center;
+        margin-block-end: 2rem;
+
+        .star {
+            margin-inline-end: .5rem;
+        }
+    }
+
+    .ratings-list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0 1.5rem .25rem;
+            border-inline-end: 1px solid $clr2;
+        }
+
+        li:last-of-type {
+            border-inline-end: none;
+        }
+
+        li:first-of-type {
+            padding-inline-start: 0;
+        }
+    }
+}

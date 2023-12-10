@@ -33,7 +33,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/services/svg.service.js"
+    "src/app/services/svg.service.js",
+    "src/app/cmps/Map.tsx"
   ],
   "exclude": [
     "node_modules"

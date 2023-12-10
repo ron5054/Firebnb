@@ -3,6 +3,9 @@ import { utilsService } from "@/app/services/utils.service"
 import MainHeader from "../../cmps/MainHeader"
 import HostMini from "@/app/cmps/HostMini"
 import Amenities from "@/app/cmps/Amenities"
+import Ratings from "@/app/cmps/Ratings"
+import Map from "@/app/cmps/Map"
+
 export default function SpaceDetails({ params }: { params: { spaceId: string } }) {
     const space = airbnbService.getSpaceById(params.spaceId)
     const avgRating = utilsService.calculateRating(space.reviews)
@@ -44,6 +47,8 @@ export default function SpaceDetails({ params }: { params: { spaceId: string } }
                     )} */}
 
                 </section>
+                <Ratings space={space} />
+                <Map space={space} />
             </section>
         </section>
     )
